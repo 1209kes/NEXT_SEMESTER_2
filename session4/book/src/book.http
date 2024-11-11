@@ -1,0 +1,31 @@
+@server = http://localhost:3000
+
+#책 조회
+GET {{server}}/book
+
+###책 추가
+POST {{server}}/book
+Content-Type: application/json
+
+{
+    "title": "미움받을 용기",
+    "author": "고가 후미타케 & 기시미 이치로",
+    "isAvailable": true
+}
+
+### 특정 책 조회
+GET {{server}}/book/2
+
+### 책 삭제
+DELETE {{server}}/book/3
+
+### 책 정보 수정
+PUT {{server}}/book/1
+Content-Type: application/json
+
+  {
+        "id": "1",
+        "title": "구의 증명",
+        "author": "최진영",
+        "isAvailable": false
+    }

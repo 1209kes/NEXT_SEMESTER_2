@@ -1,0 +1,196 @@
+/* 전체 레이아웃 */
+.App {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 30px;
+    /* font-family: 'Helvetica Neue', Arial, sans-serif; */
+    background-color: #1b1b1b; /* 검은색 배경 */
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    color: #f1f1f1; /* 기본 텍스트는 밝은 색으로 변경 */
+}
+
+/* 타이틀 스타일 */
+h1,
+h2 {
+    text-align: center;
+    color: #76ff03; /* 포인트 초록색 */
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+/* 폼 스타일 */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+input[type='text'],
+input[type='password'],
+textarea {
+    padding: 12px;
+    border: 2px solid #333; /* 어두운 테두리 */
+    border-radius: 8px;
+    font-size: 16px;
+    background-color: #2c2c2c; /* 입력 필드 배경 어둡게 */
+    color: #f1f1f1; /* 텍스트 밝은 색 */
+    transition: border-color 0.3s ease;
+}
+
+input[type='text']:focus,
+input[type='password']:focus,
+textarea:focus {
+    border-color: #76ff03; /* 포커스 시 초록색 테두리 */
+    outline: none;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+/* 버튼 스타일 */
+button {
+    padding: 12px 15px;
+    font-size: 16px;
+    color: #1b1b1b; /* 버튼 텍스트 검은색 */
+    background-color: #76ff03; /* 초록색 버튼 */
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #64dd17; /* 호버 시 더 짙은 초록색 */
+}
+
+/* 검색 필드와 버튼 스타일 */
+.search-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.search-container input[type='text'] {
+    flex: 1;
+    padding: 12px;
+    border: 2px solid #333;
+    border-radius: 8px;
+    font-size: 16px;
+    margin-right: 10px;
+    background-color: #2c2c2c; /* 입력 필드 배경 어둡게 */
+    color: #f1f1f1;
+    transition: border-color 0.3s ease;
+}
+
+.search-container input[type='text']:focus {
+    border-color: #76ff03; /* 검색 필드 포커스 시 초록색 */
+}
+
+.search-container button {
+    padding: 12px 20px;
+    font-size: 16px;
+    color: #1b1b1b;
+    background-color: #76ff03; /* 초록색 검색 버튼 */
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.search-container button:hover {
+    background-color: #64dd17; /* 호버 시 더 짙은 초록색 */
+}
+
+/* 목록 스타일 */
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    background-color: #2c2c2c; /* 리스트 배경 어둡게 */
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+li strong {
+    font-weight: bold;
+    color: #76ff03; /* 포인트 초록색 */
+}
+
+li small {
+    color: #b0b0b0; /* 보조 텍스트 색상 */
+    display: block;
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+/* 리스트 버튼 스타일 */
+li button {
+    margin-right: 10px;
+    padding: 8px 12px;
+    background-color: #76ff03; /* 기본 초록색 */
+    color: #1b1b1b;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+li button:first-child:hover {
+    background-color: #64dd17; /* 호버 시 더 진한 초록색 */
+}
+
+li button:last-child {
+    background-color: #76ff03; /* 삭제 버튼만 빨간색 */
+}
+
+li button:last-child:hover {
+    background-color: #64dd17; /* 호버 시 더 짙은 빨간색 */
+}
+
+/* 반응형 스타일 */
+@media (max-width: 600px) {
+    .App {
+        padding: 20px;
+    }
+
+    input[type='text'],
+    input[type='password'],
+    textarea {
+        font-size: 14px;
+    }
+
+    button {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    .search-container input[type='text'] {
+        margin-right: 5px;
+    }
+
+    .search-container button {
+        padding: 10px 15px;
+    }
+
+    li {
+        padding: 15px;
+    }
+}
+  
+  .nanum-gothic-coding-bold {
+    font-family: "Nanum Gothic Coding", monospace;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+body {
+    font-family: "Nanum Gothic Coding", cursive;
+}
